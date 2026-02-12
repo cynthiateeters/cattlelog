@@ -70,23 +70,24 @@ console.log(`Found ${jsonFiles.length} cow JSON files`);
 
 /**
  * Generate import statements.
- * Example: import a3f8c1 from "./a3f8c1.json";
+ * Prefix with 'c_' since hex IDs may start with numbers (invalid JS identifiers).
+ * Example: import c_a3f8c1 from "./a3f8c1.json";
  */
 const imports = jsonFiles
   .map((file) => {
     const id = file.replace(".json", "");
-    return `import ${id} from "./${file}";`;
+    return `import c_${id} from "./${file}";`;
   })
   .join("\n");
 
 /**
  * Generate array entries with ID injection.
- * Example: { id: "a3f8c1", ...a3f8c1 },
+ * Example: { id: "a3f8c1", ...c_a3f8c1 },
  */
 const entries = jsonFiles
   .map((file) => {
     const id = file.replace(".json", "");
-    return `  { id: "${id}", ...${id} },`;
+    return `  { id: "${id}", ...c_${id} },`;
   })
   .join("\n");
 
