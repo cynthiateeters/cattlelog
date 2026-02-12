@@ -1,5 +1,5 @@
 {
-  "$schema": "./creature.schema.json",
+  "$schema": "../../creature.schema.json",
   "name": "Broken Example",
   "author": "Student Name",
   "source": "invalid-source",

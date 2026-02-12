@@ -44,14 +44,16 @@ No setup required - it just works when you clone the repo and open it in VS Code
 3. Press `Ctrl+Space` (Windows/Linux) or `Cmd+Space` (Mac)
 4. VS Code shows the allowed values: "original", "student", "community"
 
-### Explore the test files
+### Explore the playground
 
-The project root contains two test files for learning:
+The `docs/json-playground/` folder is a safe space to experiment with JSON Schema validation:
 
 - `test-creature-valid.json` - A correct file with no errors
 - `test-creature-errors.json` - A broken file showing common mistakes
 
-Open `test-creature-errors.json` to see red squiggles highlighting these problems:
+These files are included in the workspace schema settings, so VS Code validates them automatically.
+
+Open `docs/json-playground/test-creature-errors.json` to see red squiggles highlighting these problems:
 
 | Field        | Error                        | Fix                                       |
 | ------------ | ---------------------------- | ----------------------------------------- |
@@ -59,6 +61,17 @@ Open `test-creature-errors.json` to see red squiggles highlighting these problem
 | `tags`       | String instead of array      | Use `["tag1", "tag2"]`                    |
 | `dateAdded`  | Wrong format                 | Use YYYY-MM-DD like "2026-02-12"          |
 | `extraField` | Unknown field                | Remove it - only defined fields allowed   |
+
+### Create your own test file
+
+Practice by creating a valid creature file in the playground:
+
+1. Create a new file: `docs/json-playground/my-test.json`
+2. Type `{` and press `Ctrl+Space` to see available fields
+3. Fill in all required fields using autocomplete hints
+4. Watch the error count in the bottom-left until it reaches zero
+
+This is a safe place to experiment - playground files are gitignored and won't be committed.
 
 ## Creating your creature file
 
@@ -118,14 +131,14 @@ The magic happens in `.vscode/settings.json`:
 {
   "json.schemas": [
     {
-      "fileMatch": ["src/cows/*.json"],
+      "fileMatch": ["src/cows/*.json", "docs/json-playground/*.json"],
       "url": "./creature.schema.json"
     }
   ]
 }
 ```
 
-This tells VS Code: "Apply `creature.schema.json` to all JSON files matching `src/cows/*.json`."
+This tells VS Code: "Apply `creature.schema.json` to all JSON files matching these patterns."
 
 Because this file is committed to the repo, everyone who clones it gets automatic validation - no manual setup required.
 
@@ -163,6 +176,8 @@ JSON Schema validation catches errors before you submit your PR:
 - Invalid enum values
 
 This saves time for both you and the PR reviewer.
+
+**Bonus:** AI coding assistants like GitHub Copilot also read the schema. When you ask Copilot to help create a creature file, it knows exactly what fields are required and what values are valid.
 
 ## Learn more
 

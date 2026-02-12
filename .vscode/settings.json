@@ -1,7 +1,7 @@
 {
   "json.schemas": [
     {
-      "fileMatch": ["src/cows/*.json"],
+      "fileMatch": ["src/cows/*.json", "docs/json-playground/*.json"],
       "url": "./creature.schema.json"
     }
   ]

@@ -25,3 +25,8 @@ npm-debug.log*
 
 .specstory/
 reports/
+
+# Playground files (keep example files, ignore student experiments)
+docs/json-playground/*.json
+!docs/json-playground/test-creature-errors.json
+!docs/json-playground/test-creature-valid.json
