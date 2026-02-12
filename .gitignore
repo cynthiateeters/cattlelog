@@ -30,3 +30,4 @@ reports/
 docs/json-playground/*.json
 !docs/json-playground/test-creature-errors.json
 !docs/json-playground/test-creature-valid.json
+.claude/

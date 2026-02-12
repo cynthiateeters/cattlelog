@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "ASCII art creature gallery - teaching tool for JavaScript array methods",
   "type": "module",
+  "bin": {
+    "cattlelog": "./bin/cattlelog.js"
+  },
   "engines": {
     "node": ">=22"
   },

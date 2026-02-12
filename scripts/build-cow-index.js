@@ -71,12 +71,13 @@ console.log(`Found ${jsonFiles.length} cow JSON files`);
 /**
  * Generate import statements.
  * Prefix with 'c_' since hex IDs may start with numbers (invalid JS identifiers).
- * Example: import c_a3f8c1 from "./a3f8c1.json";
+ * Node 22+ requires import attributes for JSON files.
+ * Example: import c_a3f8c1 from "./a3f8c1.json" with { type: "json" };
  */
 const imports = jsonFiles
   .map((file) => {
     const id = file.replace(".json", "");
-    return `import c_${id} from "./${file}";`;
+    return `import c_${id} from "./${file}" with { type: "json" };`;
   })
   .join("\n");
 
