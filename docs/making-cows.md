@@ -90,6 +90,15 @@ Better prompts include:
 - Character restrictions ("standard keyboard characters only")
 - Style guidance ("simple", "minimalist", "detailed")
 
+### What to ask for
+
+You can prompt AI for either:
+
+- **Just the art** — then paste it into the `art` field of your JSON file
+- **The complete JSON file** — ask it to follow `creature.schema.json`
+
+Either way, **you are responsible for a file that validates**. VS Code will show red squiggles if something is wrong. Use `npm run see-cow` to verify the art renders correctly.
+
 ### Common issues to fix
 
 | Problem                   | Solution                                     |
