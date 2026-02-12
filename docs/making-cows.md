@@ -76,7 +76,7 @@ ASCII art has been around since the 1960s. Many archives exist online.
 
 ## AI-generated
 
-AI tools can create ASCII art quickly, but the output often needs fixing.
+AI tools can create ASCII art quickly, but the output often needs fixing. That's not a flaw — it's a feature. When AI makes mistakes (wrong escaping, broken formatting, abstract art), you learn by debugging and fixing them. This is exactly how professional developers work with AI tools.
 
 ### Prompting tips
 
