@@ -17,6 +17,14 @@ ASCII art creature gallery - a teaching tool for JavaScript array methods.
 
 Cattlelog transforms the classic cowsay collection into an interactive gallery for learning JavaScript. Students explore array methods like `filter()`, `map()`, and `find()` while browsing ASCII art creatures.
 
+## Beginner's guide
+
+New to the project? Start here:
+
+1. **[Assignment instructions](docs/INSTRUCTIONS.md)** - Step-by-step guide to fork, clone, and contribute your creature
+2. **[Assignment checklist](docs/CHECKLIST.md)** - Verify your work before submitting
+3. **[JSON schema validation](docs/json-schema-validation.md)** - How VS Code validates your creature file
+
 ## Quick start
 
 ```bash
