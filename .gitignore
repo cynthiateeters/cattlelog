@@ -10,7 +10,6 @@ dist/
 .env.*.local
 
 # Editor directories
-.vscode/
 .idea/
 
 # OS files

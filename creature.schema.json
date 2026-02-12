@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cynthiateeters/cattlelog/creature.schema.json",
+  "title": "Cattlelog Creature",
+  "description": "Schema for ASCII art creature files in the cattlelog gallery",
+  "type": "object",
+  "required": ["name", "author", "source", "tags", "dateAdded", "art"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to this schema file for VS Code validation"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "description": "Display name for the creature (e.g., 'Tux the Penguin')"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Creator's name"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["original", "student", "community"],
+      "description": "Origin: 'original' (from cowsay), 'student' (class contribution), 'community' (external)"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Categories for filtering (e.g., ['animal', 'classic'])"
+    },
+    "dateAdded": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "ISO date when added (YYYY-MM-DD)"
+    },
+    "art": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ASCII art with placeholders: $thoughts, $eyes, $tongue"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "./creature.schema.json",
+  "name": "Broken Example",
+  "author": "Student Name",
+  "source": "invalid-source",
+  "tags": "should-be-array",
+  "dateAdded": "February 12",
+  "art": "some art",
+  "extraField": "not allowed"
+}
