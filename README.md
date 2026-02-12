@@ -22,8 +22,9 @@ Cattlelog transforms the classic cowsay collection into an interactive gallery f
 New to the project? Start here:
 
 1. **[Assignment instructions](docs/INSTRUCTIONS.md)** - Step-by-step guide to fork, clone, and contribute your creature
-2. **[Assignment checklist](docs/CHECKLIST.md)** - Verify your work before submitting
-3. **[JSON schema validation](docs/json-schema-validation.md)** - How VS Code validates your creature file
+2. **[Making ASCII art](docs/making-cows.md)** - How to create creatures (hand-drawn, web search, AI)
+3. **[Assignment checklist](docs/CHECKLIST.md)** - Verify your work before submitting
+4. **[JSON schema validation](docs/json-schema-validation.md)** - How VS Code validates your creature file
 
 ## Quick start
 

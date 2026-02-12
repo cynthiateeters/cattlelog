@@ -1,6 +1,6 @@
 // AUTO-GENERATED - do not edit manually
 // Run: node scripts/build-cow-index.js
-// Generated: 2026-02-12T22:14:40.149Z
+// Generated: 2026-02-12T23:02:24.480Z
 
 import c_02523f from "./02523f.json" with { type: "json" };
 import c_02798d from "./02798d.json" with { type: "json" };

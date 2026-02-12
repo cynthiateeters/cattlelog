@@ -90,7 +90,15 @@ src/cows/a3f8c1.json
 
 See [json-schema-validation.md](json-schema-validation.md) for field details and validation help.
 
-### Step 4: Rebuild and verify
+### Step 4: Preview your creature
+
+```bash
+npm run see-cow src/cows/YOUR-ID.json
+```
+
+This shows how your creature will look with the speech bubble. Verify the art is correct before proceeding.
+
+### Step 5: Rebuild and verify
 
 ```bash
 npm run build:index
@@ -143,8 +151,10 @@ Refresh your browser — your creature should appear in the gallery!
 
 ## Part 5: Document and reflect
 
-1. **Take a screenshot** of your creature in the gallery
-2. **Complete your reflection** about the fork workflow experience
+Review the deliverables in your course submission:
+
+1. **Screenshot** of your creature in the gallery
+2. **Reflection** about your fork workflow experience
 
 ---
 
@@ -154,6 +164,7 @@ Before submitting, verify your work with [CHECKLIST.md](CHECKLIST.md).
 
 ## Resources
 
+- [making-cows.md](making-cows.md) — How to create ASCII art (hand-drawn, web search, AI)
 - [json-schema-validation.md](json-schema-validation.md) — Creature file format and VS Code validation
 - [json-playground/](json-playground/) — Practice files for experimenting
 

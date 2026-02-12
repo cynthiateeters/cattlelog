@@ -15,7 +15,9 @@
     "preview": "vite preview",
     "test": "vitest",
     "gen-id": "node scripts/gen-id.js",
-    "build:index": "node scripts/build-cow-index.js"
+    "build:index": "node scripts/build-cow-index.js",
+    "see-cow": "node scripts/see-cow.js",
+    "fix-thoughts": "node scripts/fix-thoughts-indent.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.18",

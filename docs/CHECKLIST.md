@@ -25,6 +25,13 @@ Use this checklist to verify your work before submitting. Every item should be c
   - [ ] `dateAdded` — today's date (YYYY-MM-DD)
   - [ ] `art` — your ASCII art
 
+## Preview your creature
+
+- [ ] Run `npm run see-cow src/cows/YOUR-ID.json`
+- [ ] Art looks correct (not jumbled or abstract)
+- [ ] `$thoughts` forms a diagonal line pointing to your creature
+- [ ] `$eyes` appears where eyes should be (if applicable)
+
 ## Build and verify
 
 - [ ] `npm run build:index` runs without errors
@@ -84,6 +91,7 @@ src/cows/
 
 | Problem                 | Solution                                       |
 | ----------------------- | ---------------------------------------------- |
+| Art looks broken        | Run `npm run see-cow` to preview in terminal   |
 | Creature doesn't appear | Run `npm run build:index` and refresh          |
 | Red squiggles in JSON   | Check field names and types against schema     |
 | Push rejected           | Make sure you're pushing to YOUR fork          |
