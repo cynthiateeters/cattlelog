@@ -2,8 +2,13 @@
  * Gallery module for displaying ASCII art creatures.
  */
 
-import { cows } from "../cows/index.js";
+import { cows as unsortedCows } from "../cows/index.js";
 import { replacePlaceholders } from "../lib/replacer.js";
+
+// Sort cows alphabetically by name
+const cows = [...unsortedCows].sort((a, b) =>
+  a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+);
 
 /**
  * Render a cow's ASCII art with default face.
@@ -49,13 +54,8 @@ function createCard(cow) {
   pre.className = "cow-art text-xs overflow-x-auto";
   pre.textContent = renderArt(cow);
 
-  const meta = document.createElement("div");
-  meta.className = "mt-2 text-xs text-gray-500";
-  meta.textContent = `by ${cow.author}`;
-
   card.appendChild(header);
   card.appendChild(pre);
-  card.appendChild(meta);
 
   return card;
 }
