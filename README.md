@@ -24,18 +24,27 @@ npm install
 npm run dev
 ```
 
-Open <http://localhost:5173> to view the gallery.
+Open the localhost URL shown in terminal to view the gallery.
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm test` - Run tests (Vitest)
+- `npm run gen-id` - Generate unique creature ID
+- `npm run build:index` - Rebuild cow index
 
 ## Project structure
 
 ```text
 cattlelog/
 ├── src/
-│   ├── cows/           # JSON creature files
+│   ├── cows/           # JSON creature files (189 creatures)
 │   ├── gallery/        # Gallery UI components
 │   ├── lib/            # Core rendering functions
 │   └── main.js         # Application entry point
 ├── scripts/            # Build utilities
+├── test/               # Vitest tests
 └── index.html          # Gallery entry point
 ```
 

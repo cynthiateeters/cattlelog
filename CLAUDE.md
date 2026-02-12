@@ -27,5 +27,6 @@
 
 - `scripts/` - Build utilities (gen-id.js, build-cow-index.js)
 - `src/cows/` - JSON creature files with 6-char hex IDs
-- `src/lib/` - ESM library modules
+- `src/lib/` - ESM library modules (balloon, faces, replacer)
 - `src/gallery/` - Browser gallery code
+- `test/` - Vitest tests with teaching comments
