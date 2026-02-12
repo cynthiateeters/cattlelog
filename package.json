@@ -1,62 +1,25 @@
 {
-  "name": "cowsay",
-  "version": "1.6.0",
-  "description": "cowsay is a configurable talking cow",
-  "keywords": [
-    "cow",
-    "cowsay",
-    "cowthink",
-    "figlet",
-    "talking",
-    "ASCII"
-  ],
-  "homepage": "https://github.com/piuccio/cowsay",
-  "author": {
-    "name": "Fabio Crisci",
-    "email": "piuccio@gmail.com",
-    "url": "https://github.com/piuccio/"
-  },
-  "license": "MIT",
-  "main": "./index",
-  "types": "./index.d.ts",
-  "module": "./build/cowsay.es.js",
-  "browser": "./build/cowsay.umd.js",
-  "bin": {
-    "cowsay": "./cli.js",
-    "cowthink": "./cli.js"
-  },
-  "files": [
-    "index.js",
-    "index.d.ts",
-    "cli.js",
-    "build/",
-    "cows/",
-    "lib/"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/piuccio/cowsay.git"
+  "name": "@cynthiateeters/cattlelog",
+  "version": "0.1.0",
+  "description": "ASCII art creature gallery - teaching tool for JavaScript array methods",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
   },
   "scripts": {
-    "prepare": "rollup -c",
-    "test": "tape test/**/*.js"
-  },
-  "dependencies": {
-    "get-stdin": "8.0.0",
-    "string-width": "~2.1.1",
-    "strip-final-newline": "2.0.0",
-    "yargs": "15.4.1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen-id": "node scripts/gen-id.js",
+    "build:index": "node scripts/build-cow-index.js"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "15.0.0",
-    "@rollup/plugin-node-resolve": "9.0.0",
-    "execa": "5.0.0",
-    "rollup": "2.26.5",
-    "rollup-plugin-string": "3.0.0",
-    "tape": "5.7.4"
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
   },
-  "preferGlobal": true,
-  "engines": {
-    "node": ">= 4"
-  }
+  "keywords": ["ascii-art", "cowsay", "teaching", "javascript"],
+  "author": "Cynthia Teeters",
+  "license": "MIT"
 }

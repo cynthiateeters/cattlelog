@@ -1,166 +1,60 @@
-# cowsay
+# Cattlelog
 
-````
- __________________
-< srsly dude, why? >
- ------------------
+ASCII art creature gallery - a teaching tool for JavaScript array methods.
+
+```text
+ ___________________
+< Welcome to class! >
+ -------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
                 ||----w |
                 ||     ||
-````
-
-cowsay is a configurable talking cow, originally written in Perl by [Tony Monroe](https://github.com/tnalpgge/rank-amateur-cowsay)
-
-This project is a translation in JavaScript of the original program and an attempt to bring the same silliness to node.js.
-
-## Install
-
-    npm install -g cowsay
-
-## Usage
-
-    cowsay JavaScript FTW!
-
-or
-
-    cowthink node.js is cool
-
-It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `cowsay -h`
-
-````
- ________
-< indeed >
- --------
-    \
-     \
-                                   .::!!!!!!!:.
-  .!!!!!:.                        .:!!!!!!!!!!!!
-  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
-      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
-      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
-      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
-      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
-        "*$bd$$$$      '*$$$$$$$$$$$o+#"
-             """"          """""""
-````
-
-## Usage as a module
-
-cowsay can be used as any other npm dependency
-```js
-const cowsay = require("cowsay");
-
-console.log(cowsay.say({
-    text : "I'm a moooodule",
-    e : "oO",
-    T : "U "
-}));
-
-// or cowsay.think()
-```
-````
- _________________
-( I'm a moooodule )
- -----------------
-        o   ^__^
-         o  (oO)\_______
-            (__)\       )\/\
-             U  ||----w |
-                ||     ||
-````
-
-getting a list of cow names:
-```js
-function get_cows(error, cow_names) {
-    if (error) {
-        console.log(error)
-    }
-    else if (cow_names) {
-        console.log(`Number of cows available: ${cow_names.length}`);
-    }
-}
-
-cowsay.list(get_cows);
 ```
 
-#### Typescript examples:
-```ts
-import * as cowsay from "cowsay"
+## About
 
-let output: string = cowsay.say({ text: 'Hello from typescript!' });
+Cattlelog transforms the classic cowsay collection into an interactive gallery for learning JavaScript. Students explore array methods like `filter()`, `map()`, and `find()` while browsing ASCII art creatures.
 
-console.log(output);
+## Quick start
+
+```bash
+npm install
+npm run dev
 ```
 
-getting a list of cow names:
-```ts
-function get_cows(error: NodeJS.ErrnoException, cow_names: Array<string>): void {
-    if (error) {
-        console.log(`Error getting cow names: ${error.message}`)
-    }
-    else if (cow_names) {
-        console.log(`Number of cows available: ${cow_names.length}`);
-    }
-}
+Open <http://localhost:5173> to view the gallery.
 
-cowsay.list(get_cows);
+## Project structure
+
+```text
+cattlelog/
+├── src/
+│   ├── cows/           # JSON creature files
+│   ├── gallery/        # Gallery UI components
+│   ├── lib/            # Core rendering functions
+│   └── main.js         # Application entry point
+├── scripts/            # Build utilities
+└── index.html          # Gallery entry point
 ```
 
-importing the `IOptions` interface directly:
-```ts
-import { IOptions } from "cowsay" // optional
+## Adding a creature
 
-let opts: IOptions = {
-    text: "Hello from TypeScript!",
-    e: '^^',
-    r: true,
-};
+1. Generate a unique ID: `npm run gen-id`
+2. Create `src/cows/{id}.json` with your ASCII art
+3. Run `npm run build:index` to update the index
+4. Submit a pull request
 
-console.log(cowsay.say(opts));
-```
+## Acknowledgments
 
+Cattlelog is built on the work of others:
 
-## Pipe from standard input
+- **[cowsay](https://github.com/piuccio/cowsay)** - JavaScript implementation by [Fabio Crisci](https://github.com/piuccio) (MIT License)
+- **[Original cowsay](https://github.com/tnalpgge/rank-amateur-cowsay)** - Perl program by Tony Monroe
 
-    echo please repeat | cowsay
+The original ASCII art creatures in `src/cows/` are derived from the cowsay project. Newer creatures are contributed by participants in this open source project.
 
-## Usage in the browser
+## License
 
-cowsay works in your browser too with rollup / webpack / browserify / you name it.
-
-```js
-import { say } from 'cowsay';
-
-console.log(say({ text: 'grazing in the browser' }));
-```
-
-You can customize the cow by importing the relevant one
-
-```js
-import { think, SQUIRREL } from 'cowsay';
-
-console.log(think({
-  text: 'grazing in the browser',
-  cow: SQUIRREL,
-  eyes: 'pp',
-  tongue: ';;',
-}));
-```
-
-All cows are included in the bundle, but you can use rollup / webpack tree-shake feature to reduce the final bundle size.
-
-### Browser options
-
-```js
-say({
-  text: 'hello',
-  cow: '', // Template for a cow, get inspiration from `./cows`
-  eyes: 'oo', // Select the appearance of the cow's eyes, equivalent to cowsay -e
-  tongue: 'L|', // The tongue is configurable similarly to the eyes through -T and tongue_string, equivalent to cowsay -T
-  wrap: false, // If it is specified, the given message will not be word-wrapped. equivalent to cowsay -n
-  wrapLength: 40, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
-  mode: 'b', // One of 	"b", "d", "g", "p", "s", "t", "w", "y"
-});
-```
+MIT License - see [LICENSE](LICENSE) for details.

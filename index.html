@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cattlelog - ASCII Art Gallery</title>
+    <link rel="stylesheet" href="/src/gallery/gallery.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto py-6 px-4">
+        <h1 class="text-3xl font-bold text-gray-900">Cattlelog</h1>
+        <p class="text-gray-600">ASCII Art Creature Gallery</p>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-6 px-4">
+      <!-- Search and filter controls -->
+      <div id="controls" class="mb-6">
+        <input
+          type="search"
+          id="search"
+          placeholder="Search creatures..."
+          class="w-full max-w-md px-4 py-2 border rounded-lg"
+        />
+      </div>
+
+      <!-- Gallery grid -->
+      <div
+        id="gallery"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- Cards rendered by JavaScript -->
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
