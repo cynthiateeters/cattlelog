@@ -2,4 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gallery-specific styles will be added in Phase 5 */
+/* ASCII art display */
+.cow-art {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.2;
+  white-space: pre;
+  background-color: hsl(210, 20%, 98%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: hsl(210, 10%, 25%);
+}
+
+/* Card hover effect */
+.cow-card {
+  cursor: pointer;
+}
+
+.cow-card:hover .cow-art {
+  background-color: hsl(210, 30%, 96%);
+}
+
+/* Search input focus */
+#search:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(217, 91%, 60%);
+  border-color: hsl(217, 91%, 60%);
+}

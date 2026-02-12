@@ -1,6 +1,9 @@
 /**
  * @fileoverview Cattlelog application entry point.
- * Placeholder - will be implemented in Phase 5.
  */
 
-console.log("Cattlelog loading...");
+import "./gallery/gallery.css";
+import { initGallery } from "./gallery/gallery.js";
+
+// Initialize when DOM is ready
+document.addEventListener("DOMContentLoaded", initGallery);
