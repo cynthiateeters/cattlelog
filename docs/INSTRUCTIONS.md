@@ -5,6 +5,8 @@
 > You'll fork a real project, add your own ASCII creature, and submit a pull request. This is the same workflow used by developers contributing to projects worldwide.
 >
 > **Make it yours.** Create a creature that represents you — an animal, object, character, or something completely original. There's no wrong answer.
+>
+> _New to open source?_ Read [Intro to open source](tutorials/intro-to-open-source.md) to understand what you're joining.
 
 ---
 
