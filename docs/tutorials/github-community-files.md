@@ -2,6 +2,8 @@
 
 This tutorial explains the special files GitHub recognizes for open source projects.
 
+> For background on _why_ these files matter, see [Intro to open source](intro-to-open-source.md).
+
 ## The .github folder
 
 GitHub automatically detects files in the `.github/` folder and uses them to enhance your repository. These files create a better experience for contributors without requiring any code.
