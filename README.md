@@ -35,6 +35,7 @@ New to the project? Start here:
 - **[Intro to Vite](docs/tutorials/intro-to-vite.md)** — Understanding the build tool
 - **[Tailwind CSS](docs/tutorials/tailwind-css.md)** — Utility-first CSS basics
 - **[Netlify deploy previews](docs/tutorials/netlify-previews.md)** — What happens when you submit a PR
+- **[GitHub community files](docs/tutorials/github-community-files.md)** — How .github templates work
 
 ### Reference
 
@@ -88,6 +89,12 @@ Cattlelog is built on the work of others:
 - **[Original cowsay](https://github.com/tnalpgge/rank-amateur-cowsay)** - Perl program by Tony Monroe
 
 The original ASCII art creatures in `src/cows/` are derived from the cowsay project. Newer creatures are contributed by participants in this open source project.
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md) code of conduct.
 
 ## License
 

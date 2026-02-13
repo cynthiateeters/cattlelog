@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Assignment instructions
+    url: https://github.com/cynthiateeters/cattlelog/blob/main/docs/INSTRUCTIONS.md
+    about: Step-by-step guide to complete the assignment
+  - name: Troubleshooting guide
+    url: https://github.com/cynthiateeters/cattlelog/blob/main/docs/guides/troubleshooting.md
+    about: Solutions to common problems
