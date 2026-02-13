@@ -4,7 +4,7 @@ Thank you for your interest in contributing to Cattlelog! This project welcomes 
 
 ## Students
 
-If you're here for the Week 4 assignment:
+If you're here for an assignment:
 
 1. Read the [assignment instructions](docs/INSTRUCTIONS.md)
 2. Follow the [fork workflow](docs/guides/fork-workflow.md)
@@ -14,7 +14,7 @@ If you're here for the Week 4 assignment:
 
 ## Other contributors
 
-We welcome bug fixes, documentation improvements, and new features.
+We welcome bug fixes, documentation improvements, and new features but we ask that new cow contributions **only** come from the repo maintainer's students.
 
 ### Quick start
 
