@@ -44,7 +44,7 @@ function createCard(cow) {
   title.textContent = cow.name;
 
   const idBadge = document.createElement("code");
-  idBadge.className = "text-xs bg-gray-100 px-2 py-1 rounded text-gray-500";
+  idBadge.className = "text-xs bg-gray-100 px-2 py-1 rounded text-gray-700";
   idBadge.textContent = cow.id;
 
   header.appendChild(title);
