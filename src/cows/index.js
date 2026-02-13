@@ -1,6 +1,6 @@
 // AUTO-GENERATED - do not edit manually
 // Run: node scripts/build-cow-index.js
-// Generated: 2026-02-12T23:02:24.480Z
+// Generated: 2026-02-13T14:56:31.237Z
 
 import c_02523f from "./02523f.json" with { type: "json" };
 import c_02798d from "./02798d.json" with { type: "json" };
@@ -98,6 +98,7 @@ import c_6f4062 from "./6f4062.json" with { type: "json" };
 import c_70162e from "./70162e.json" with { type: "json" };
 import c_711f4e from "./711f4e.json" with { type: "json" };
 import c_7422fe from "./7422fe.json" with { type: "json" };
+import c_75c202 from "./75c202.json" with { type: "json" };
 import c_76be38 from "./76be38.json" with { type: "json" };
 import c_790c02 from "./790c02.json" with { type: "json" };
 import c_7988ed from "./7988ed.json" with { type: "json" };
@@ -304,6 +305,7 @@ export const cows = [
   { id: "70162e", ...c_70162e },
   { id: "711f4e", ...c_711f4e },
   { id: "7422fe", ...c_7422fe },
+  { id: "75c202", ...c_75c202 },
   { id: "76be38", ...c_76be38 },
   { id: "790c02", ...c_790c02 },
   { id: "7988ed", ...c_7988ed },
