@@ -286,7 +286,7 @@ git remote set-url origin https://github.com/YOUR-USERNAME/cattlelog.git
 
 ```bash
 git checkout main
-git checkout -b add-creature-YOURID
+git checkout -b add-cow-USERNAME
 ```
 
 ### "Changes not staged for commit"

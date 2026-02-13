@@ -58,15 +58,20 @@ git remote -v
 
 ## Step 3: Create a branch
 
-Never work directly on `main`. Create a feature branch:
+Never work directly on `main`. Create a feature branch using your GitHub username:
 
 ```bash
-git checkout -b add-creature-YOURID
+git checkout -b add-cow-USERNAME
 ```
 
-Branch naming conventions:
+Replace `USERNAME` with your actual GitHub username. For example, if your username is `jsmith`:
 
-- `add-creature-a3f8c1` — Adding a new creature
+```bash
+git checkout -b add-cow-jsmith
+```
+
+Other branch naming conventions:
+
 - `fix-typo-readme` — Fixing something
 - `update-docs` — Documentation changes
 
@@ -102,7 +107,7 @@ Tips for commit messages:
 Push your branch to your fork (origin):
 
 ```bash
-git push -u origin add-creature-YOURID
+git push -u origin add-cow-USERNAME
 ```
 
 The `-u` flag sets up tracking so future pushes are simpler.

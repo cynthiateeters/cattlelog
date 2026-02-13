@@ -1,3 +1,10 @@
+# New creature submission
+
+## Student information
+
+- **Your name:**
+- [ ] I am a student in Prof. Teeters' JavaScript class
+
 ## Creature information
 
 - **Creature name:**
