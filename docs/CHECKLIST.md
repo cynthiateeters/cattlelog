@@ -40,7 +40,7 @@ Use this checklist to verify your work before submitting. Every item should be c
 
 ## Git workflow
 
-- [ ] Created a feature branch (not committing to main)
+- [ ] Created a feature branch named `add-cow-USERNAME` (your GitHub username)
 - [ ] Committed your changes with a descriptive message
 - [ ] Pushed your branch to your fork
 

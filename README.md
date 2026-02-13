@@ -28,6 +28,7 @@ New to the project? Start here:
 
 - **[Making ASCII art](docs/guides/making-cows.md)** — Create creatures (hand-drawn, web search, AI)
 - **[Fork workflow](docs/guides/fork-workflow.md)** — Git fork, clone, branch, PR process
+- **[Working with AI assistants](docs/guides/ai-assistants.md)** — Customize Copilot for this project
 - **[Troubleshooting](docs/guides/troubleshooting.md)** — Fix common problems
 
 ### Tutorials (optional)
