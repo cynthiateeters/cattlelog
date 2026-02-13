@@ -1,0 +1,9 @@
+{
+  "$schema": "./creature.schema.json",
+  "name": "Star",
+  "author": "Cynthia Teeters",
+  "source": "community",
+  "tags": ["simple", "test"],
+  "dateAdded": "2026-02-13",
+  "art": "$thoughts\n $thoughts\n    *\n   /|\\\n  / | \\\n *--+--*\n  \\ | /\n   \\|/\n    *"
+}
