@@ -58,15 +58,20 @@ git remote -v
 
 ## Step 3: Create a branch
 
-Never work directly on `main`. Create a feature branch:
+Never work directly on `main`. Create a feature branch using your GitHub username:
 
 ```bash
-git checkout -b add-creature-YOURID
+git checkout -b add-cow-USERNAME
 ```
 
-Branch naming conventions:
+Replace `USERNAME` with your actual GitHub username. For example, if your username is `jsmith`:
 
-- `add-creature-a3f8c1` — Adding a new creature
+```bash
+git checkout -b add-cow-jsmith
+```
+
+Other branch naming conventions:
+
 - `fix-typo-readme` — Fixing something
 - `update-docs` — Documentation changes
 
@@ -102,7 +107,7 @@ Tips for commit messages:
 Push your branch to your fork (origin):
 
 ```bash
-git push -u origin add-creature-YOURID
+git push -u origin add-cow-USERNAME
 ```
 
 The `-u` flag sets up tracking so future pushes are simpler.
@@ -134,6 +139,44 @@ Penguins are cool and I wanted one in the gallery
 - Creature appears in gallery
 - JSON validates without errors
 ```
+
+---
+
+## Step 8: After your PR is merged
+
+Once the instructor merges your PR, your creature is live. Here's how to clean up:
+
+### Switch back to main
+
+```bash
+git checkout main
+```
+
+### Sync your fork with upstream
+
+Your fork's `main` branch is now behind. Sync it:
+
+```bash
+# Add upstream if you haven't already
+git remote add upstream https://github.com/cynthiateeters/cattlelog.git
+
+# Fetch and merge the latest changes
+git fetch upstream
+git merge upstream/main
+
+# Push to your fork so it's up to date
+git push origin main
+```
+
+### Delete your local branch (optional)
+
+Your feature branch served its purpose. You can delete it:
+
+```bash
+git branch -d add-cow-USERNAME
+```
+
+The `-d` flag only works if the branch was merged. This is a safety feature.
 
 ---
 
@@ -202,6 +245,8 @@ This happens when your changes overlap with someone else's. Ask for help if you'
 6. PUSH      Upload to your fork
       ↓
 7. PR        Propose changes to original
+      ↓
+8. SYNC      Update your fork after merge
 ```
 
 This workflow keeps everyone's work separate until it's reviewed and approved.
