@@ -114,6 +114,8 @@ npm run build:index
 - Generates import statements for each creature
 - Writes the updated `index.js`
 
+> **Curious how it works?** See the [Code generation walkthrough](../tutorials/code-generation-walkthrough.md) for a line-by-line explanation of the script.
+
 **When to use:** After adding your creature file to `src/cows/`.
 
 **Example output:**

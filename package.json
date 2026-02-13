@@ -3,6 +3,21 @@
   "version": "0.1.0",
   "description": "ASCII art creature gallery - teaching tool for JavaScript array methods",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynthiateeters/cattlelog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cynthiateeters/cattlelog/issues"
+  },
+  "homepage": "https://github.com/cynthiateeters/cattlelog#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin/",
+    "src/"
+  ],
   "bin": {
     "cattlelog": "./bin/cattlelog.js"
   },
