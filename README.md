@@ -21,10 +21,24 @@ Cattlelog transforms the classic cowsay collection into an interactive gallery f
 
 New to the project? Start here:
 
-1. **[Assignment instructions](docs/INSTRUCTIONS.md)** - Step-by-step guide to fork, clone, and contribute your creature
-2. **[Making ASCII art](docs/making-cows.md)** - How to create creatures (hand-drawn, web search, AI)
-3. **[Assignment checklist](docs/CHECKLIST.md)** - Verify your work before submitting
-4. **[JSON schema validation](docs/json-schema-validation.md)** - How VS Code validates your creature file
+1. **[Assignment instructions](docs/INSTRUCTIONS.md)** — Step-by-step guide to fork, clone, and contribute your creature
+2. **[Assignment checklist](docs/CHECKLIST.md)** — Verify your work before submitting
+
+### Guides
+
+- **[Making ASCII art](docs/guides/making-cows.md)** — Create creatures (hand-drawn, web search, AI)
+- **[Fork workflow](docs/guides/fork-workflow.md)** — Git fork, clone, branch, PR process
+- **[Troubleshooting](docs/guides/troubleshooting.md)** — Fix common problems
+
+### Tutorials (optional)
+
+- **[Intro to Vite](docs/tutorials/intro-to-vite.md)** — Understanding the build tool
+- **[Tailwind CSS](docs/tutorials/tailwind-css.md)** — Utility-first CSS basics
+
+### Reference
+
+- **[JSON schema validation](docs/reference/json-schema-validation.md)** — How VS Code validates your creature file
+- **[Scripts reference](docs/reference/scripts.md)** — npm scripts for creating and testing creatures
 
 ## Quick start
 
@@ -41,6 +55,7 @@ Open the localhost URL shown in terminal to view the gallery.
 - `npm run build` - Build for production
 - `npm test` - Run tests (Vitest)
 - `npm run gen-id` - Generate unique creature ID
+- `npm run see-cow <file>` - Preview creature with speech bubble
 - `npm run build:index` - Rebuild cow index
 
 ## Project structure

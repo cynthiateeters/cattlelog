@@ -91,7 +91,7 @@ src/cows/
 
 | Problem                 | Solution                                       |
 | ----------------------- | ---------------------------------------------- |
-| Art looks broken        | Run `npm run see-cow` to preview in terminal   |
+| Art looks broken        | Run `npm run see-cow src/cows/YOUR-ID.json`    |
 | Creature doesn't appear | Run `npm run build:index` and refresh          |
 | Red squiggles in JSON   | Check field names and types against schema     |
 | Push rejected           | Make sure you're pushing to YOUR fork          |

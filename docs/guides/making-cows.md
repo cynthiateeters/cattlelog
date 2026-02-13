@@ -4,6 +4,72 @@ Three ways to create your creature: draw it yourself, find existing art online, 
 
 ---
 
+## Learning from existing creatures
+
+Before creating your own, explore the 189+ creatures already in the gallery. They're excellent learning resources.
+
+### Browse the gallery
+
+Start the dev server and click through the gallery:
+
+```bash
+npm run dev
+```
+
+Notice how different creatures:
+
+- Use the `$thoughts` connector to link to the speech bubble
+- Handle eyes with `$eyes` or hard-coded characters
+- Balance detail with simplicity
+- Stay within readable widths
+
+### Read the JSON files
+
+Open any file in `src/cows/` to see the raw JSON:
+
+```bash
+# List all creature files
+ls src/cows/*.json
+
+# Open one in VS Code (click the file in the sidebar)
+```
+
+Study the `art` field to understand:
+
+- How `\n` creates line breaks
+- How `\\` escapes backslashes
+- Where `$thoughts` appears in the art
+- How spacing creates alignment
+
+### Example creatures to study
+
+| Creature      | File                    | What to notice                      |
+| ------------- | ----------------------- | ----------------------------------- |
+| Cow (classic) | `src/cows/default.json` | The original — clean, simple design |
+| Dragon        | `src/cows/dragon.json`  | Multi-line detail with wings        |
+| Tux           | `src/cows/tux.json`     | Shading with different characters   |
+
+### What makes a good creature?
+
+Based on the existing gallery:
+
+- **Recognizable** — You can tell what it is at a glance
+- **Compact** — Fits comfortably (under 40 chars wide)
+- **Connected** — `$thoughts` flows naturally to the creature
+- **Unique** — Adds something not already in the gallery
+
+### Try this exercise
+
+1. Pick 3 creatures from the gallery
+2. Open their JSON files side by side
+3. Run `npm run see-cow src/cows/FILENAME.json` for each
+4. Compare the JSON `art` field to the rendered output
+5. Notice patterns in escaping and formatting
+
+This exercise builds intuition before you create your own.
+
+---
+
 ## Hand-drawn
 
 Creating ASCII art from scratch gives you complete control. Start simple.
@@ -38,7 +104,7 @@ Creating ASCII art from scratch gives you complete control. Start simple.
 
 - Keep it under 40 characters wide
 - Use a monospace font while editing
-- Test frequently with `npm run see-cow`
+- Test frequently with `npm run see-cow your-file.json` (requires a complete JSON file)
 
 ---
 
@@ -64,7 +130,8 @@ ASCII art has been around since the 1960s. Many archives exist online.
 2. Add `$thoughts` — a diagonal line pointing to the creature
 3. Replace the eyes with `$eyes` placeholder (optional)
 4. Add `$tongue` if the creature has a mouth (optional)
-5. Test with `npm run see-cow` to verify
+5. Complete all required fields (name, author, source, tags, dateAdded)
+6. Test with `npm run see-cow your-file.json` to verify rendering
 
 ### Attribution
 
@@ -97,7 +164,7 @@ You can prompt AI for either:
 - **Just the art** — then paste it into the `art` field of your JSON file
 - **The complete JSON file** — ask it to follow `creature.schema.json`
 
-Either way, **you are responsible for a file that validates**. VS Code will show red squiggles if something is wrong. Use `npm run see-cow` to verify the art renders correctly.
+Either way, **you are responsible for a file that validates**. VS Code will show red squiggles if something is wrong. Use `npm run see-cow your-file.json` to verify the art renders correctly.
 
 ### Common issues to fix
 
@@ -109,11 +176,41 @@ Either way, **you are responsible for a file that validates**. VS Code will show
 | Abstract/unrecognizable   | Start over with a simpler prompt             |
 | Missing thought connector | Add `$thoughts` diagonal manually            |
 
-### After AI generates art
+### Broken vs fixed: A real example
 
-1. **Preview immediately** — run `npm run see-cow` before anything else
+Here's what escaping problems look like in practice:
+
+**Broken (AI output with wrong escaping):**
+
+```json
+"art": "  /\\_/\\n ( o.o )\\n  > ^ <"
+```
+
+This renders as garbage because `\n` isn't escaped properly and `\_` creates unwanted characters.
+
+**Fixed (correct JSON escaping):**
+
+```json
+"art": "  /\\_/\\\n ( o.o )\n  > ^ <"
+```
+
+This renders correctly:
+
+```text
+  /\_/\
+ ( o.o )
+  > ^ <
+```
+
+**The rule:** In JSON, use `\\` for a literal backslash and `\n` for newlines. When AI gives you `\\n` (escaped newline), change it to `\n`.
+
+### Validate and fix AI output
+
+AI output almost always needs adjustment. Once you have a complete JSON file:
+
+1. **Preview with see-cow** — run `npm run see-cow your-file.json` to render the art
 2. **Check the diagonal** — does `$thoughts` form a proper line to your creature?
-3. **Verify backslashes** — JSON escaping is tricky; AI often gets it wrong
+3. **Fix backslashes** — JSON escaping is tricky; AI often gets it wrong
 4. **Confirm it's recognizable** — if you can't tell what it is, neither can anyone else
 
 ### Example workflow

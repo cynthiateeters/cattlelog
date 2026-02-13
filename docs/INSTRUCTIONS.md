@@ -19,17 +19,30 @@ An ASCII art creature that will be added to the Cattlelog gallery. You'll practi
 - [ ] Node.js installed (version 22 or higher)
 - [ ] Completed Week 3
 
-## If you get stuck
+### Verify your setup
 
-| What you need        | Command                     |
-| -------------------- | --------------------------- |
-| Open terminal        | View → Terminal (or Ctrl+`) |
-| Install packages     | `npm install`               |
-| Start dev server     | `npm run dev`               |
-| Generate creature ID | `npm run gen-id`            |
-| Rebuild index        | `npm run build:index`       |
+Run these commands in your terminal to confirm everything is ready:
 
-**Ask Agent for help.** Describe your problem — this is part of learning to work with AI.
+```bash
+node --version    # Should show v22.x.x or higher
+npm --version     # Should show 10.x.x or higher
+git --version     # Should show git version 2.x.x
+```
+
+If any command fails, see [Troubleshooting](guides/troubleshooting.md#setup-problems).
+
+## Scripts you'll use
+
+| Command                                 | What it does                                   |
+| --------------------------------------- | ---------------------------------------------- |
+| `npm run dev`                           | Start the gallery in your browser              |
+| `npm run gen-id`                        | Generate your unique 6-character ID            |
+| `npm run see-cow src/cows/YOUR-ID.json` | Preview your creature with speech bubble       |
+| `npm run build:index`                   | Rebuild the gallery after adding your creature |
+
+For detailed explanations, see [Scripts reference](reference/scripts.md).
+
+**If you get stuck:** Ask Agent for help. Describe your problem — this is part of learning to work with AI.
 
 ---
 
@@ -51,6 +64,8 @@ An ASCII art creature that will be added to the Cattlelog gallery. You'll practi
 ---
 
 ## Part 2: Create your creature
+
+> **Tip:** Want to experiment first? Use `docs/json-playground/` as a safe space to try out ASCII art and JSON formatting. Files there won't affect the gallery but still get VS Code validation. When you're happy with your creature, move it to `src/cows/`.
 
 ### Step 1: Generate your ID
 
@@ -88,7 +103,7 @@ src/cows/a3f8c1.json
 - Use `$tongue` for tongue (optional)
 - Keep it under 40 characters wide for best display
 
-See [json-schema-validation.md](json-schema-validation.md) for field details and validation help.
+See [JSON schema validation](reference/json-schema-validation.md) for field details and validation help.
 
 ### Step 4: Preview your creature
 
@@ -164,8 +179,11 @@ Before submitting, verify your work with [CHECKLIST.md](CHECKLIST.md).
 
 ## Resources
 
-- [making-cows.md](making-cows.md) — How to create ASCII art (hand-drawn, web search, AI)
-- [json-schema-validation.md](json-schema-validation.md) — Creature file format and VS Code validation
+- [Making ASCII art](guides/making-cows.md) — How to create creatures (hand-drawn, web search, AI)
+- [Fork workflow](guides/fork-workflow.md) — Git fork, clone, branch, PR process
+- [JSON schema validation](reference/json-schema-validation.md) — Creature file format and VS Code validation
+- [Intro to Vite](tutorials/intro-to-vite.md) — Understanding the build tool
+- [Tailwind CSS](tutorials/tailwind-css.md) — Utility-first CSS basics
 - [json-playground/](json-playground/) — Practice files for experimenting
 
 ---
