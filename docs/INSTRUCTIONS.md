@@ -128,7 +128,7 @@ Refresh your browser — your creature should appear in the gallery!
 1. Create a branch for your work:
 
    ```bash
-   git checkout -b add-creature-YOURID
+   git checkout -b add-cow-USERNAME
    ```
 
 2. Stage your files:
@@ -145,7 +145,7 @@ Refresh your browser — your creature should appear in the gallery!
 
 4. Push to your fork:
    ```bash
-   git push -u origin add-creature-YOURID
+   git push -u origin add-cow-USERNAME
    ```
 
 ---
