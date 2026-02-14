@@ -34,9 +34,6 @@ New to the project? Start here:
 ### Tutorials (optional)
 
 - **[Intro to open source](docs/tutorials/intro-to-open-source.md)** — What open source means and why it matters
-- **[Intro to Vite](docs/tutorials/intro-to-vite.md)** — Understanding the build tool
-- **[Tailwind CSS](docs/tutorials/tailwind-css.md)** — Utility-first CSS basics
-- **[Netlify deploy previews](docs/tutorials/netlify-previews.md)** — What happens when you submit a PR
 - **[GitHub community files](docs/tutorials/github-community-files.md)** — How .github templates work
 
 ### Reference

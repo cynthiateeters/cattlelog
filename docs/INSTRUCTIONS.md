@@ -184,8 +184,6 @@ Before submitting, verify your work with [CHECKLIST.md](CHECKLIST.md).
 - [Making ASCII art](guides/making-cows.md) — How to create creatures (hand-drawn, web search, AI)
 - [Fork workflow](guides/fork-workflow.md) — Git fork, clone, branch, PR process
 - [JSON schema validation](reference/json-schema-validation.md) — Creature file format and VS Code validation
-- [Intro to Vite](tutorials/intro-to-vite.md) — Understanding the build tool
-- [Tailwind CSS](tutorials/tailwind-css.md) — Utility-first CSS basics
 - [json-playground/](json-playground/) — Practice files for experimenting
 
 ---
