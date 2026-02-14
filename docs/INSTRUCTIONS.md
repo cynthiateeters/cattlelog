@@ -1,4 +1,4 @@
-# Week 4: Cattlelog contribution
+# Cattlelog contribution
 
 > **This is your first open source contribution.**
 >
@@ -19,7 +19,7 @@ An ASCII art creature that will be added to the Cattlelog gallery. You'll practi
 - [ ] GitHub account
 - [ ] VS Code with GitHub Copilot extension
 - [ ] Node.js installed (version 22 or higher)
-- [ ] Completed Week 3
+- [ ] Completed previous Copilot tutorials
 
 ### Verify your setup
 
