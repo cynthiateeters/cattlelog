@@ -48,5 +48,8 @@
     "javascript"
   ],
   "author": "Cynthia Teeters",
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "rollup": "^4.59.0"
+  }
 }
