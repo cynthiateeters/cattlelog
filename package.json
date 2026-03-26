@@ -35,7 +35,7 @@
     "fix-thoughts": "node scripts/fix-thoughts-indent.js"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.2.1",
+    "@tailwindcss/postcss": "^4.2.2",
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
     "tailwindcss": "^4.2.2",
