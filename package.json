@@ -41,7 +41,7 @@
     "postcss": "^8.4.35",
     "rollup": "^4.60.1",
     "tailwindcss": "^4.2.2",
-    "vite": "^8.0.5",
+    "vite": "^8.0.8",
     "vitest": "^4.1.2"
   },
   "keywords": [
